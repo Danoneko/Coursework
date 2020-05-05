@@ -1,0 +1,31 @@
+<!doctype html>
+<html  lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>#2</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"> </script>
+	<script type="text/javascript" src="code1.js"></script> 
+</head>
+
+<body>
+    
+    <font size=5><p align=center>ПРИВЕТ! У МЕНЯ ЕСТЬ ДЛЯ ТЕБЯ ЗАДАЧА!</p></font>
+    <font size=4><p align=left style="margin-top: 0px; margin-bottom: 0px;">Попробуй заполнить пустые пузырьки так, чтобы под каждым пузырьком с цифрой было написано число раз, которое эта цифра встречается во всех пузырьках.</p></font>
+    
+    	<form name="myform">
+    			<label  style="margin-top: 0px; margin-bottom: 0px;">Заполнить пузырьки числами от 0 до <input type="text" name="columns" id="columns" value="3" size="1" style="text-align:center; width: 30px; height: 30px; border-radius: 30px;"/> не включая</label>
+            	<input type="button"  onclick="addTable()" value="CREATE" class="create"/>
+            	<input type="button" onclick="subTable()" value="DELETE" class="delete"/>
+                <input type="button" onclick="checkTable()" value="CHECK" class="check"/>
+                <input type="button" onclick="secretTable()" value="CHECK SECRET" class="secret"/>
+                <p id="columns_error" class="error">Введите положительное число от 1 до 10 включительно.</p>
+                <p id="secret_error" class="error">На данном этапе работает только для 10 столбцов.</p>
+                <p id="wrong"  style="visibility:hidden; margin-top: 0px; margin-bottom: 0px;">Чтобы не совершить ошибки в следующий раз, будь внимателен с порядком заполнения!</p>
+</form> 
+       <div id="elem" align="center" >
+       </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,136 @@
+		body{
+			background-image:url(fon.jpg);
+			background-size: 100%;
+			font-family:"Comic Sans MS", cursive;
+			color: white;
+			margin: 5%;
+		}
+		table{
+			width:auto;
+			height:auto;
+			border-spacing: 10px;
+		}
+		table td{
+			border: 1px solid white;
+			width: 105px;
+			height: 105px;
+			border-radius: 100px;
+			text-align: center;
+			background-image:url(bubble1.png);
+			background-size:100%;
+			opacity: 3;
+		}
+		.error{
+			color: #FF82AB;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.input-mini {
+    		display: block;
+   			margin-bottom: 5px;
+		}
+		.create{
+		  text-decoration: none;
+		  outline: none;
+		  display: inline-block;
+		  width: 140px;
+		  height: 45px;
+		  line-height: 45px;
+		  border-radius: 30px;
+		  margin: 10px 10px;
+		  font-family: 'Montserrat', sans-serif;
+		  font-size: 11px;
+		  text-transform: uppercase;
+		  text-align: center;
+		  letter-spacing: 3px;
+		  font-weight: 600;
+		  color: #524f4e;
+		  background: white;
+		  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+		  transition: .3s;
+  		}
+		.create:hover {
+		  background: #2EE59D;
+		  box-shadow: 0 15px 20px rgba(46,229,157,.5);
+		  color: white;
+		  transform: translateY(-7px);
+		}
+		.delete{
+		  text-decoration: none;
+		  outline: none;
+		  display: inline-block;
+		  width: 140px;
+		  height: 45px;
+		  line-height: 45px;
+		  border-radius: 30px;
+		  margin: 10px 10px;
+		  font-family: 'Montserrat', sans-serif;
+		  font-size: 11px;
+		  text-transform: uppercase;
+		  text-align: center;
+		  letter-spacing: 3px;
+		  font-weight: 600;
+		  color: #524f4e;
+		  background: white;
+		  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+		  transition: .3s;
+  		}
+		.delete:hover {
+		  background: #FF82AB;
+		  box-shadow: 0 15px 20px rgba(255,130,170,.7);
+		  color: white;
+		  transform: translateY(-7px);
+		}
+		.check{
+		  text-decoration: none;
+		  outline: none;
+		  display: inline-block;
+		  width: 140px;
+		  height: 45px;
+		  line-height: 45px;
+		  border-radius: 30px;
+		  margin: 10px 10px;
+		  font-family: 'Montserrat', sans-serif;
+		  font-size: 11px;
+		  text-transform: uppercase;
+		  text-align: center;
+		  letter-spacing: 3px;
+		  font-weight: 600;
+		  color: #524f4e;
+		  background: white;
+		  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+		  transition: .3s;
+  		}
+		.check:hover {
+		  background: #87CEFA;
+		  box-shadow: 0 15px 20px rgba(8,125,239,1);
+		  color: white;
+		  transform: translateY(-7px);
+		}
+		.secret{
+		  text-decoration: none;
+		  outline: none;
+		  display: inline-block;
+		  width: 140px;
+		  height: 45px;
+		  line-height: 45px;
+		  border-radius: 30px;
+		  margin: 10px 10px;
+		  font-family: 'Montserrat', sans-serif;
+		  font-size: 11px;
+		  text-transform: uppercase;
+		  text-align: center;
+		  letter-spacing: 3px;
+		  font-weight: 600;
+		  color: #524f4e;
+		  background: white;
+		  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+		  transition: .3s;
+  		}
+		.secret:hover {
+		  background: #EE82EE;
+		  box-shadow: 0 15px 20px rgba(238,130,238,.7);
+		  color: white;
+		  transform: translateY(-7px);
+		}
+
