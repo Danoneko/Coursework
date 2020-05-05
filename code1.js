@@ -6,7 +6,7 @@ var arrayEdit = [];
 		$('#secret_error').hide();
 	});
 	$(window).keydown(function(event){					//ловим событие нажатия клавиши
-		if(event.keyCode == 13) {						//если это Enter
+		if(event.keyCode == 13 || event.keyCode == 66) {						//если это Enter
 			$('#columns').blur();								//снимаем фокус с поля ввода
 		}
 	});
