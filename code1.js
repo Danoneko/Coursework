@@ -5,6 +5,11 @@ var arrayEdit = [];
 		$('#columns_error').hide();
 		$('#secret_error').hide();
 	});
+	$(window).keydown(function(event){					//ловим событие нажатия клавиши
+		if(event.keyCode == 13) {						//если это Enter
+			$('#columns').blur();								//снимаем фокус с поля ввода
+		}
+	});
 function addTable(){
 	
 	var columns = document.myform.columns.value;
