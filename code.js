@@ -34,20 +34,26 @@ function addTable(){
 	var columns = document.myform.columns.value;
   	if(columns == "" || columns > 10 || columns <= 1){
 		if(columns == ""){
+		  $('#columns_error').css('color','#FF82AB');
 		  $('#columns_error').show(500);
 		  $('#columns_error').fadeOut(10000);
 		 }
 		 if(columns <= 1){
+		  $('#columns_error_min').css('color','#FF82AB');
 		  $('#columns_error_min').show(500);
 		  $('#columns_error_min').fadeOut(10000);
 		 }
 		 if(columns > 10){
+		  $('#columns_error_max').css('color','#FF82AB');
 		  $('#columns_error_max').show(500);
 		  $('#columns_error_max').fadeOut(10000);
 		 }
 		 console.log('Введеное число: ' + columns);
 	}
 	else{
+		$('#columns_error').css('color','#FFF');
+		$('#columns_error_min').css('color','#FFF');
+		$('#columns_error_max').css('color','#FFF');
 		$('#columns_error_max').fadeOut(10000);
 		$('#columns_error_min').fadeOut(10000);
 		$('#columns_error').fadeOut(10000);
@@ -193,11 +199,15 @@ function checkTable() {
 			});
 		});		
 		$('#correct').show(500);
+		$('#correct').css('text-shadow', '1px 1px 1px #000');
+		$('#correct').css('color','#00FF00');
 		$('#correct').fadeOut(10000);
 		$('#wrong').fadeOut(10000);	
 	}
 	else{
 		$('#wrong').show(500);
+		$('#wrong').css('text-shadow', '1px 1px 1px #000');
+		$('#wrong').css('color','#00FF00');
 		$('#wrong').fadeOut(10000);	
 		$('#correct').fadeOut(10000);
 		$('table tr').each(function(row){
