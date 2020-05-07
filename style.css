@@ -5,32 +5,93 @@
 			background-attachment: fixed;
 			font-family:"Comic Sans MS", cursive;
 			color: white;
-			margin: 5%;
+			margin: 3%;
 			overflow:auto;
+			position:absolute;
 		}
 		table{
 			width:auto;
-			height:auto;
+			height:320;
 			border-spacing: 10px;
+			table-layout:fixed;
 		}
 		table td{
 			border: 1px solid white;
 			width: 105px;
 			height: 105px;
-			border-radius: 100px;
+			border-radius: 100%;
 			text-align: center;
 			background-image:url(bubble1.png);
 			background-size:100%;
 			opacity: 3;
+			background-repeat:no-repeat;
+		}
+		.helper{
+			width:120px;
+			height:75px;
+			float:right;
+			right: 10px;
+		}
+		.helper:hover{
+		}
+		.white {
+			 width: 20px;
+			 height: 20px;
+			 top:10px;
+			 border-radius: 50%;
+			 display:inline-block;
+		} 
+		.eye {
+			 width: 10px;
+			 height: 10px;
+			 border-radius: 50%;
+			 background-color: black;
+			 position: absolute;
+		}
+		.sos{
+			display:none;
+			position:absolute;
+			right: 140px;
+			top: 150px;
+			border:2px solid #CCC;
+			border-radius:20px;
+			color:#333;
+			background-color:#FFF;
+			padding:10px;
+			opacity: 0.9;
+			color:#000;
+			z-index:10;
+			box-shadow: 0 8px 15px rgba(0,0,0,.5);
+		}
+		.helper:hover .sos{
+			display:block;
+		}
+		.sos:after { 
+			content: ' '; 
+			position: absolute; 
+			width: 0; 
+			height: 0; 
+			left: 130px; 
+			top: 44px; 
+			border: 17px solid; 
+			border-color: #fff transparent transparent transparent; 
 		}
 		.error{
-			color: #FF82AB;
-			margin-top: 0px;
-			margin-bottom: 0px;
+			color:#FF82AB;
+			position:absolute;
+			top: 170px;
 		}
-		.input-mini {
-    		display: block;
-   			margin-bottom: 5px;
+		.correct{
+			color:#00FF00;
+			font-size:25px;
+			color:#fff!important;
+			text-shadow: 1px 1px 1px #000;
+		}
+		.wrong{
+			color:#00FF00;
+			font-size:25px;
+			color:#fff!important;
+			text-shadow: 1px 1px 1px #000;
 		}
 		.create{
 		  text-decoration: none;
@@ -101,7 +162,7 @@
 		  font-weight: 600;
 		  color: #524f4e;
 		  background: white;
-		  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+		  box-shadow: 8px 0 15px rgba(0,0,0,.1);
 		  transition: .3s;
   		}
 		.check:hover {
@@ -136,13 +197,3 @@
 		  color: white;
 		  transform: translateY(-7px);
 		}
-/*		@media screen and (max-width: 1000px){
-			body{
-				background-size: 100% 100%;
-			}
-		}
-		@media screen and (max-width: 720px){
-			body{
-				background-size: 200% 100%;
-			}
-		}*/
