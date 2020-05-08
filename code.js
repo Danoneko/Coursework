@@ -364,7 +364,7 @@ var arrayEdit = [];
 
 
 ///    БЕГАЮЩИЕ ГЛАЗА НА КРАБЕ     \\\
-
+if(screen.width > 1000){
 						  document.addEventListener('mousemove', stare);
 						  function stare(e) {
 						   const to = {
@@ -407,3 +407,4 @@ var arrayEdit = [];
 								};
 						   };
 
+}
