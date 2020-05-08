@@ -63,10 +63,14 @@ function addTable(){
 					}
 					else{
 						
-						
 						arrayEdit = [];
 						arrayNoEdit = [];
 						$("#tab").remove();
+						
+						if(screen.width <= 1000 && (columns == 10 || columns == 9)){
+							$('table td').css('width','50px');
+							$('table td').css('height','50px');
+						}
 						
 						var content = '<table id="tab">';
 						for(var i = 0; i < 2; i++){
