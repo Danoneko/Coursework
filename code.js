@@ -45,7 +45,7 @@ var arrayEdit = [];
 	
 	
 	
-				function addTable(){
+function addTable(){
 					
 					var columns = document.myform.columns.value;
 					if(columns > 10 || columns <= 1){
@@ -63,10 +63,6 @@ var arrayEdit = [];
 					}
 					else{
 						
-						if((columns == 10 || columns == 9) && (screen.width <= 1000) && (screen.height >= 1000)){
-							$('table td').css('width','50px');
-							$('table td').css('height','50px');
-						}
 						
 						arrayEdit = [];
 						arrayNoEdit = [];
@@ -93,6 +89,7 @@ var arrayEdit = [];
 					//Функция заполнения нижней строки значениями
 					$(function()	{
 						$('.edit').click(function(e)	{
+							
 							var t = e.target || e.srcElement;				//ловим элемент, по которому кликнули
 							var elm_name = t.tagName.toLowerCase();			//получаем название тега
 							if(elm_name == 'input')	{return false;}			//если это инпут - ничего не делаем
@@ -113,8 +110,7 @@ var arrayEdit = [];
 							}
 						});
 					});
-					
-				}	
+}	
 
 
 
@@ -204,6 +200,10 @@ var arrayEdit = [];
 							for(var j = 0; j < columns; j++){
 								if(i == arrayNoEdit[j]){sum++;}			//Подсчет цифр во всей таблице
 								if(i == arrayEdit[j]){sum++;}
+								if(arrayEdit[j] >= 10 && arrayEdit[j] <=99){
+									if(i == arrayEdit[j]%10){sum++;}
+									if(i == arrayEdit[j]/10){sum++;}
+								}
 							}
 							arrayIndexNoCorrect[i] = sum;
 						}
