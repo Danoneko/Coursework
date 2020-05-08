@@ -274,7 +274,7 @@
 				display:none;
 			}
 		}	
-		@media screen and (max-height: 2000px){
+		@media screen and (min-height: 1000px){
 			.sos{
 				position:absolute;
 				top: 250px;
