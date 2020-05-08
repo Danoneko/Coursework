@@ -244,13 +244,13 @@
 		@media screen and (max-width: 1000px) and (min-height: 1000px){
 			body{
 				font-family:"Arial", cursive;
-				font-size: 28px;
+				font-size: 24px;
 			}
 			.paragf{
-				font-size: 28px;
+				font-size: 24px;
 			}
 			.headline{
-			font-size:36px;
+				font-size:36px;
 			}
 			.sos{
 				position:absolute;
