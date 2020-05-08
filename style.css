@@ -32,7 +32,7 @@
 
 		table{
 			width:auto;
-			height:320;
+			height:auto;
 			border-spacing: 10px;
 			table-layout:fixed;
 		}
@@ -244,10 +244,10 @@
 		@media screen and (max-width: 1000px) and (min-height: 1000px){
 			body{
 				font-family:"Arial", cursive;
-				font-size:24px;
+				font-size: 28px;
 			}
 			.paragf{
-				font-size:24px;
+				font-size: 28px;
 			}
 			.headline{
 			font-size:36px;
@@ -255,7 +255,7 @@
 			.sos{
 				position:absolute;
 				top: 270px;
-				right:15%;
+				right:13%;
 				display:block;
 			}
 			.max{
