@@ -198,12 +198,14 @@ function addTable(){
 						for(var i = 0; i < columns; i++){
 							var sum = 0;
 							for(var j = 0; j < columns; j++){
+								
 								if(i == arrayNoEdit[j]){sum++;}			//Подсчет цифр во всей таблице
 								if(i == arrayEdit[j]){sum++;}
-								if(arrayEdit[j] >= 10 && arrayEdit[j] <=99){
+								if(arrayEdit[j] >= 10 && arrayEdit[j] <= 99){
 									if(i == arrayEdit[j]%10){sum++;}
-									if(i == arrayEdit[j]/10){sum++;}
+									if(i == Math.floor(arrayEdit[j]/10)){sum++;}
 								}
+								
 							}
 							arrayIndexNoCorrect[i] = sum;
 						}
