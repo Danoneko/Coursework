@@ -64,8 +64,8 @@ var arrayEdit = [];
 					else{
 						
 						if((columns == 10 || columns == 9) && (screen.width <= 1000)){
-							$('table td').css('width','70px');
-							$('table td').css('height','70px');
+							$('table td').css('width','50px');
+							$('table td').css('height','50px');
 						}
 						
 						arrayEdit = [];
