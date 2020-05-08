@@ -9,6 +9,12 @@
 			overflow:auto;
 			position:absolute;
 		}
+		
+
+		
+		/*   СТИЛЬ ТАБЛИЦЫ  */
+
+
 		table{
 			width:auto;
 			height:320;
@@ -26,6 +32,14 @@
 			opacity: 3;
 			background-repeat:no-repeat;
 		}
+		
+		
+		
+		
+		
+		/*   КРАБ  */
+		
+		
 		.helper{
 			width:120px;
 			height:75px;
@@ -44,9 +58,20 @@
 		.eye {
 			 width: 10px;
 			 height: 10px;
+			 
+			 top: 155px;
+			 
 			 border-radius: 50%;
 			 background-color: black;
 			 position: absolute;
+			 
+			 
+			 
+			 
+			 
+			 
+		/*   СООБЩЕНИЕ КРАБА  */
+			 
 		}
 		.sos{
 			display:none;
@@ -76,6 +101,13 @@
 			border: 17px solid; 
 			border-color: #fff transparent transparent transparent; 
 		}
+	
+	
+	
+	
+		
+		
+		/*   СООБЩЕНИЯ ОБ ОШИБКЕ  */
 		.error{
 			color:#FF82AB;
 			display:none;
@@ -87,6 +119,14 @@
 			text-shadow: 1px 1px 1px #000;
 			display:none;
 		}
+		
+
+
+
+		
+		/*   КНОПКИ  */
+		
+		
 		.create{
 		  text-decoration: none;
 		  outline: none;
