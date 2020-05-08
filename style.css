@@ -3,11 +3,17 @@
 			background-size: cover;
 			background-repeat:no-repeat;
 			background-attachment: fixed;
-			font-family:"Comic Sans MS", cursive;
-			color: white;
 			margin: 2%;
+			
 			overflow:auto;
 			position:absolute;
+			
+			font-size:18px;
+			font-family:"Comic Sans MS", cursive;
+			color: white;
+			
+			
+			
 		}
 		.headline{
 			font-size:24px;
@@ -18,12 +24,6 @@
 			font-size:18px;
 			float:left;
 		}
-		@media screen and (max-width: 1000px){
-			body{
-				font-family:"Arial", cursive;
-			}
-			
-		}	
 			
 			
 			
@@ -77,19 +77,28 @@
 			 background-color: black;
 			 position: absolute;
 			 
-			 
-			 
-			 
+		}	 
+		.yes{
+			display:none;
+			margin:0px;
+			padding:0px;
+		}
+		.max{
+			display:block;
+		}
+		.min{
+			display:none;
+		}
 			 
 			 
 		/*   СООБЩЕНИЕ КРАБА  */
 			 
-		}
+		
 		.sos{
 			display:none;
-			position:absolute;
-			right: 140px;
-			top: 150px;
+			position:fixed;
+			right: 12%;
+			top: 25%;
 			border:2px solid #CCC;
 			border-radius:20px;
 			color:#333;
@@ -103,21 +112,7 @@
 		.helper:hover .sos{
 			display:block;
 		}
-		.sos:after { 
-			content: ' '; 
-			position: absolute; 
-			width: 0; 
-			height: 0; 
-			left: 128px; 
-			top: 35px; 
-			border: 20px solid; 
-			border-color: #fff transparent transparent transparent; 
-		}
 	
-	
-	
-	
-		
 		
 		/*   СООБЩЕНИЯ ОБ ОШИБКЕ  */
 		.error{
@@ -243,3 +238,35 @@
 		  color: white;
 		  transform: translateY(-7px);
 		}
+
+
+
+		@media screen and (max-width: 1000px){
+			body{
+				font-family:"Arial", cursive;
+				font-size:24px;
+			}
+			.paragf{
+				font-size:24px;
+			}
+			.headline{
+			font-size:36px;
+			}
+			.sos{
+				position:absolute;
+				top: 400px;
+				right:20%;
+			}
+			.max{
+				display:none;
+			}
+			.min{
+				display:block;
+			}
+			.yes{
+				display:block;
+			}
+			.eye {
+				display:none;
+			}
+		}	

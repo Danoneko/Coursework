@@ -365,7 +365,6 @@ var arrayEdit = [];
 
 ///    БЕГАЮЩИЕ ГЛАЗА НА КРАБЕ     \\\
 
-
 						  document.addEventListener('mousemove', stare);
 						  function stare(e) {
 						   const to = {

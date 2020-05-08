@@ -13,19 +13,20 @@
     <p align=center class = "headline">ПРИВЕТ! У МЕНЯ ЕСТЬ ДЛЯ ТЕБЯ ЗАДАЧА!</p>
     
     <div>
-            <p align=left class ="paragf">Попробуй заполнить пустые пузырьки так, чтобы под каждым пузырьком с цифрой было написано число раз, которое эта цифра встречается во всех пузырьках.</p>
+            <p align = left class = "paragf">Попробуй заполнить пустые пузырьки так, чтобы под каждым пузырьком с цифрой было написано число раз, которое эта цифра встречается во всех пузырьках.</p>
             
             <form name="myform">
-                <label> Выбрать сложность <input type="text" name="columns" id="columns" value="3" size="1" style="text-align:center; width: 30px; height: 30px; border-radius: 30px;"/></label>
+                <label style="margin-top: 0px; margin-bottom: 0px;"> Выбрать сложность <input type="text" name="columns" id="columns" value="3" size="1" style="text-align:center; width: 30px; height: 30px; border-radius: 30px;"/></label>
                 <input type="button" id="create" onclick="addTable()" value="СОЗДАТЬ" class="create"/>
                 <input type="button" onclick="subTable()" value="УДАЛИТЬ" class="delete"/>
                 <input type="button" onclick="checkTable()" value="ПРОВЕРИТЬ" class="check"/>
                 <input type="button" onclick="secretTable()" value="Секрет" class="secret"/>
         
-                <div class="helper">
+                <div class = "helper">
                         <div class="sos">Псс...Я могу дать <br>тебе подсказку!</div>
-                            <img src="help.png" style="width: 120px; height:75px; position:absolute;">
-                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class = "max"><img src="help.png" style="width: 120px; height:75px; position:absolute;"></div>
+                            <div class = "min"><img src="help1.png" style="width: 120px; height:75px; position:absolute;"></div>
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <div class="white">
                                 <div class="eye"></div>
                             </div>
@@ -40,7 +41,7 @@
 		</form>
 		</div>
         
-        	
+        <div class="yes"><br><br>   </div>
         <br><br>
         <div id="elem" align="center">
    		</div>
