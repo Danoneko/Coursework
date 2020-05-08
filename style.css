@@ -256,6 +256,7 @@
 				position:absolute;
 				top: 400px;
 				right:20%;
+				display:block;
 			}
 			.max{
 				display:none;
@@ -273,3 +274,11 @@
 				display:none;
 			}
 		}	
+		@media screen and (max-height: 2000px){
+			.sos{
+				position:absolute;
+				top: 250px;
+				right:20%;
+				display:block;
+			}
+		}
