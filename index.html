@@ -11,39 +11,42 @@
 <body>
     
     <p align=center class = "headline">ПРИВЕТ! У МЕНЯ ЕСТЬ ДЛЯ ТЕБЯ ЗАДАЧА!</p>
-    <p align=left class ="paragf">Попробуй заполнить пустые пузырьки так, чтобы под каждым пузырьком с цифрой было написано число раз, которое эта цифра встречается во всех пузырьках.</p>
     
-	<form name="myform">
-    	<label   class ="paragf"> Выбрать сложность <input type="text" name="columns" id="columns" value="3" size="1" style="text-align:center; width: 30px; height: 30px; border-radius: 30px;"/></label>
-        <input type="button" id="create" onclick="addTable()" value="СОЗДАТЬ" class="create"/>
-        <input type="button" onclick="subTable()" value="УДАЛИТЬ" class="delete"/>
-        <input type="button" onclick="checkTable()" value="ПРОВЕРИТЬ" class="check"/>
-        <input type="button" onclick="secretTable()" value="Секрет" class="secret"/>
-
-        <div class="helper">
-                <div class="sos">Псс...Я могу дать <br>тебе подсказку!</div>
-                    <img src="help.png" style="width: 120px; height:75px; position:absolute;">
-                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div class="white">
-                        <div class="eye"></div>
-                    </div>
-                    <div class="white">
-                        <div class="eye"></div>
-                    </div>
-            </div>
+    <div>
+            <p align=left class ="paragf">Попробуй заполнить пустые пузырьки так, чтобы под каждым пузырьком с цифрой было написано число раз, которое эта цифра встречается во всех пузырьках.</p>
+            
+            <form name="myform">
+                <label> Выбрать сложность <input type="text" name="columns" id="columns" value="3" size="1" style="text-align:center; width: 30px; height: 30px; border-radius: 30px;"/></label>
+                <input type="button" id="create" onclick="addTable()" value="СОЗДАТЬ" class="create"/>
+                <input type="button" onclick="subTable()" value="УДАЛИТЬ" class="delete"/>
+                <input type="button" onclick="checkTable()" value="ПРОВЕРИТЬ" class="check"/>
+                <input type="button" onclick="secretTable()" value="Секрет" class="secret"/>
         
-        <p id="columns_error_max" class="error">Максимальная сложность 10</p>
-        <p id="columns_error_min" class="error">Минимальная сложность 2</p>
-        <p id="secret_error" class="error">Секретная проверка работает только при максимальной сложности</p>
-
-			
+                <div class="helper">
+                        <div class="sos">Псс...Я могу дать <br>тебе подсказку!</div>
+                            <img src="help.png" style="width: 120px; height:75px; position:absolute;">
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="white">
+                                <div class="eye"></div>
+                            </div>
+                            <div class="white">
+                                <div class="eye"></div>
+                            </div>
+                    </div>
+                
+                <p id="columns_error_max" class="error">Максимальная сложность 10</p>
+                <p id="columns_error_min" class="error">Минимальная сложность 2</p>
+                <p id="secret_error" class="error">Секретная проверка работает только при максимальной сложности</p>
+		</form>
+		</div>
+        
+        	
         <br><br>
         <div id="elem" align="center">
    		</div>
         <p id="correct" align="center" class="massage">Отлично!</p>
         <p id="correct_secret" align="center" class="massage">Замечательно! Ты прирожденный математик!</p>
         <p id="wrong_secret" align="center" class="massage">Подсказка! Здесь может присутсвовать число больше 10;)</p>
-     </form>
      
 </body>
 </html>

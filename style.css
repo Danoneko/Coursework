@@ -18,7 +18,7 @@
 			font-size:18px;
 			float:left;
 		}
-		@media screen and (max-width: 720px){
+		@media screen and (max-width: 1000px){
 			body{
 				font-family:"Arial", cursive;
 			}
