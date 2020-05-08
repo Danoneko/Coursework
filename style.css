@@ -71,21 +71,21 @@
 			position: absolute; 
 			width: 0; 
 			height: 0; 
-			left: 130px; 
-			top: 44px; 
+			left: 135px; 
+			top: 35px; 
 			border: 17px solid; 
 			border-color: #fff transparent transparent transparent; 
 		}
 		.error{
-			color:#FFF;
+			color:#FF82AB;
+			display:none;
 			position:absolute;
-			top: 170px;
 		}
 		.massage{
-			color:#FFF;
 			font-size:25px;
 			color:#fff!important;
-			text-shadow:none;
+			text-shadow: 1px 1px 1px #000;
+			display:none;
 		}
 		.create{
 		  text-decoration: none;
