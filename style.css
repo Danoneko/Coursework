@@ -9,11 +9,26 @@
 			overflow:auto;
 			position:absolute;
 		}
-		
-
-		
+		.headline{
+			font-size:24px;
+		}
+		.paragf{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size:18px;
+			float:left;
+		}
+		@media screen and (max-width: 720px){
+			body{
+				font-family:"Arial", cursive;
+			}
+			
+		}	
+			
+			
+			
 		/*   СТИЛЬ ТАБЛИЦЫ  */
-
+		
 
 		table{
 			width:auto;
@@ -58,9 +73,6 @@
 		.eye {
 			 width: 10px;
 			 height: 10px;
-			 
-			 top: 155px;
-			 
 			 border-radius: 50%;
 			 background-color: black;
 			 position: absolute;
@@ -96,9 +108,9 @@
 			position: absolute; 
 			width: 0; 
 			height: 0; 
-			left: 135px; 
+			left: 128px; 
 			top: 35px; 
-			border: 17px solid; 
+			border: 20px solid; 
 			border-color: #fff transparent transparent transparent; 
 		}
 	
