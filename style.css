@@ -16,7 +16,7 @@
 			
 		}
 		.headline{
-			font-size:24px;
+			font-size: 24px;
 		}
 		.paragf{
 			margin-top: 0px;
@@ -244,19 +244,19 @@
 		@media screen and (max-width: 1000px) and (min-height: 1000px){
 			body{
 				font-family:"Arial", cursive;
-				font-size: 24px;
+				font-size:24px;
 			}
 			.paragf{
-				font-size: 24px;
+				font-size:24px;
 			}
 			.headline{
-				font-size:36px;
+			font-size:36px;
 			}
 			.sos{
 				position:absolute;
 				top: 270px;
-				right:13%;
-				display:block;
+				right: 13%;
+				display: block;
 			}
 			.max{
 				display:none;
