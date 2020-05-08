@@ -241,7 +241,7 @@
 
 
 
-		@media screen and (max-width: 1000px){
+		@media screen and (max-width: 1000px) and (min-height: 1000px){
 			body{
 				font-family:"Arial", cursive;
 				font-size:24px;
@@ -254,7 +254,7 @@
 			}
 			.sos{
 				position:absolute;
-				top: 400px;
+				top: 250px;
 				right:20%;
 				display:block;
 			}
@@ -274,11 +274,3 @@
 				display:none;
 			}
 		}	
-		@media screen and (min-height: 1000px){
-			.sos{
-				position:absolute;
-				top: 250px;
-				right:20%;
-				display:block;
-			}
-		}
